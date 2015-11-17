@@ -1,0 +1,27 @@
+{
+  "version": "1.0.0-*",
+  "description": "Akka Class Library",
+  "authors": [
+    "AlexanderK"
+  ],
+  "tags": [
+    ""
+  ],
+  "projectUrl": "",
+  "licenseUrl": "",
+  "dependencies": {
+    "Newtonsoft.Json": "7.0.1",
+    "Wire": "0.0.5"
+  },
+  "frameworks": {
+    "dnx451": {
+      "frameworkAssemblies": {
+        "System.Net.Http": "4.0.0.0",
+        "System.Xml": "4.0.0.0",
+        "System.Xml.Linq": "4.0.0.0",
+        "System.Configuration": "4.0.0.0"
+      }
+    }
+  },
+  "resource": [ "Configuration\\Pigeon.conf" ]
+}

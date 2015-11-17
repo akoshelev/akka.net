@@ -53,7 +53,7 @@ namespace Akka.Actor
         public Settings(ActorSystem system, Config config)
         {
             _userConfig = config;
-            _fallbackConfig = ConfigurationFactory.Default();            
+            _fallbackConfig = ConfigurationFactory.Default();
             RebuildConfig();
 
             System = system;
