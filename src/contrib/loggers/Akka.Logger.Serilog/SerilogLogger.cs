@@ -44,7 +44,7 @@ namespace Akka.Logger.Serilog
 
             return logMessage != null
                 ? logMessage.Format
-                : "{Message}";
+                : message.ToString();
         }
 
         private static object[] GetArgs(object message)
@@ -53,7 +53,7 @@ namespace Akka.Logger.Serilog
 
             return logMessage != null
                 ? logMessage.Args
-                : new[] { message };
+                : new object[0];
         }
 
         /// <summary>
