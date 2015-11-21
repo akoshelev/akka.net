@@ -1,0 +1,155 @@
+{
+  "locked": false,
+  "version": 2,
+  "targets": {
+    "DNX,Version=v4.5.1": {
+      "Akka/1.0.0": {
+        "type": "project",
+        "framework": "DNX,Version=v4.5.1",
+        "dependencies": {
+          "Newtonsoft.Json": "7.0.1",
+          "Wire": "0.0.5"
+        },
+        "frameworkAssemblies": [
+          "System.Configuration",
+          "System.Net.Http",
+          "System.Xml",
+          "System.Xml.Linq"
+        ]
+      },
+      "Newtonsoft.Json/7.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        }
+      },
+      "Wire/0.0.5": {
+        "type": "package",
+        "compile": {
+          "lib/Wire.dll": {}
+        },
+        "runtime": {
+          "lib/Wire.dll": {}
+        }
+      }
+    },
+    "DNX,Version=v4.5.1/win7-x86": {
+      "Akka/1.0.0": {
+        "type": "project",
+        "framework": "DNX,Version=v4.5.1",
+        "dependencies": {
+          "Newtonsoft.Json": "7.0.1",
+          "Wire": "0.0.5"
+        },
+        "frameworkAssemblies": [
+          "System.Configuration",
+          "System.Net.Http",
+          "System.Xml",
+          "System.Xml.Linq"
+        ]
+      },
+      "Newtonsoft.Json/7.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        }
+      },
+      "Wire/0.0.5": {
+        "type": "package",
+        "compile": {
+          "lib/Wire.dll": {}
+        },
+        "runtime": {
+          "lib/Wire.dll": {}
+        }
+      }
+    },
+    "DNX,Version=v4.5.1/win7-x64": {
+      "Akka/1.0.0": {
+        "type": "project",
+        "framework": "DNX,Version=v4.5.1",
+        "dependencies": {
+          "Newtonsoft.Json": "7.0.1",
+          "Wire": "0.0.5"
+        },
+        "frameworkAssemblies": [
+          "System.Configuration",
+          "System.Net.Http",
+          "System.Xml",
+          "System.Xml.Linq"
+        ]
+      },
+      "Newtonsoft.Json/7.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        }
+      },
+      "Wire/0.0.5": {
+        "type": "package",
+        "compile": {
+          "lib/Wire.dll": {}
+        },
+        "runtime": {
+          "lib/Wire.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Akka/1.0.0": {
+      "type": "project",
+      "path": "../Akka/project.json"
+    },
+    "Newtonsoft.Json/7.0.1": {
+      "type": "package",
+      "sha512": "q3V4KLetMLnt1gpAVWgtXnHjKs0UG/RalBc29u2ZKxd5t5Ze4JBL5WiiYIklJyK/5CRiIiNwigVQUo0FgbsuWA==",
+      "files": [
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/portable-net40+sl5+wp80+win8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net40+sl5+wp80+win8+wpa81/Newtonsoft.Json.xml",
+        "lib/portable-net45+wp80+win8+wpa81+dnxcore50/Newtonsoft.Json.dll",
+        "lib/portable-net45+wp80+win8+wpa81+dnxcore50/Newtonsoft.Json.xml",
+        "Newtonsoft.Json.7.0.1.nupkg",
+        "Newtonsoft.Json.7.0.1.nupkg.sha512",
+        "Newtonsoft.Json.nuspec",
+        "tools/install.ps1"
+      ]
+    },
+    "Wire/0.0.5": {
+      "type": "package",
+      "sha512": "3DqxwC/b5q8VB+yIxs12lxDjh+AJIZgfgAKNcPinjMG8GKSTCISXc2Q0SQksdRAfzmaPu7Az+v2CSmMNmgzBqw==",
+      "files": [
+        "lib/Wire.dll",
+        "tools/init.ps1",
+        "tools/install.ps1",
+        "tools/uninstall.ps1",
+        "Wire.0.0.5.nupkg",
+        "Wire.0.0.5.nupkg.sha512",
+        "Wire.nuspec"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    "": [
+      "Akka "
+    ],
+    "DNX,Version=v4.5.1": []
+  }
+}

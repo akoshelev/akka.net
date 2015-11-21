@@ -1,0 +1,15 @@
+﻿{
+  "version": "1.0.0-*",
+  "description": "Akka.TestKit Class Library",
+  "authors": [ "AlexanderK" ],
+  "tags": [ "" ],
+  "projectUrl": "",
+  "licenseUrl": "",
+  "dependencies": {
+    "Akka": ""
+  },
+  "frameworks": {
+    "dnx451": { }
+  },
+  "resource": [ "Internal\\Reference.conf" ]
+}

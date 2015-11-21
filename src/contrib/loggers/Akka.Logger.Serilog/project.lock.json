@@ -3,17 +3,19 @@
   "version": 2,
   "targets": {
     "DNX,Version=v4.5.1": {
-      "Akka/1.0.4": {
-        "type": "package",
+      "Akka/1.0.0": {
+        "type": "project",
+        "framework": "DNX,Version=v4.5.1",
         "dependencies": {
-          "Newtonsoft.Json": "7.0.1"
+          "Newtonsoft.Json": "7.0.1",
+          "Wire": "0.0.5"
         },
-        "compile": {
-          "lib/net45/Akka.dll": {}
-        },
-        "runtime": {
-          "lib/net45/Akka.dll": {}
-        }
+        "frameworkAssemblies": [
+          "System.Configuration",
+          "System.Net.Http",
+          "System.Xml",
+          "System.Xml.Linq"
+        ]
       },
       "Newtonsoft.Json/7.0.1": {
         "type": "package",
@@ -154,21 +156,32 @@
         },
         "runtime": {
           "lib/net45/System.Threading.Tasks.dll": {}
+        }
+      },
+      "Wire/0.0.5": {
+        "type": "package",
+        "compile": {
+          "lib/Wire.dll": {}
+        },
+        "runtime": {
+          "lib/Wire.dll": {}
         }
       }
     },
     "DNX,Version=v4.5.1/win7-x86": {
-      "Akka/1.0.4": {
-        "type": "package",
+      "Akka/1.0.0": {
+        "type": "project",
+        "framework": "DNX,Version=v4.5.1",
         "dependencies": {
-          "Newtonsoft.Json": "7.0.1"
+          "Newtonsoft.Json": "7.0.1",
+          "Wire": "0.0.5"
         },
-        "compile": {
-          "lib/net45/Akka.dll": {}
-        },
-        "runtime": {
-          "lib/net45/Akka.dll": {}
-        }
+        "frameworkAssemblies": [
+          "System.Configuration",
+          "System.Net.Http",
+          "System.Xml",
+          "System.Xml.Linq"
+        ]
       },
       "Newtonsoft.Json/7.0.1": {
         "type": "package",
@@ -309,21 +322,32 @@
         },
         "runtime": {
           "lib/net45/System.Threading.Tasks.dll": {}
+        }
+      },
+      "Wire/0.0.5": {
+        "type": "package",
+        "compile": {
+          "lib/Wire.dll": {}
+        },
+        "runtime": {
+          "lib/Wire.dll": {}
         }
       }
     },
     "DNX,Version=v4.5.1/win7-x64": {
-      "Akka/1.0.4": {
-        "type": "package",
+      "Akka/1.0.0": {
+        "type": "project",
+        "framework": "DNX,Version=v4.5.1",
         "dependencies": {
-          "Newtonsoft.Json": "7.0.1"
+          "Newtonsoft.Json": "7.0.1",
+          "Wire": "0.0.5"
         },
-        "compile": {
-          "lib/net45/Akka.dll": {}
-        },
-        "runtime": {
-          "lib/net45/Akka.dll": {}
-        }
+        "frameworkAssemblies": [
+          "System.Configuration",
+          "System.Net.Http",
+          "System.Xml",
+          "System.Xml.Linq"
+        ]
       },
       "Newtonsoft.Json/7.0.1": {
         "type": "package",
@@ -464,22 +488,23 @@
         },
         "runtime": {
           "lib/net45/System.Threading.Tasks.dll": {}
+        }
+      },
+      "Wire/0.0.5": {
+        "type": "package",
+        "compile": {
+          "lib/Wire.dll": {}
+        },
+        "runtime": {
+          "lib/Wire.dll": {}
         }
       }
     }
   },
   "libraries": {
-    "Akka/1.0.4": {
-      "type": "package",
-      "sha512": "MDmIJpfIQhSp8CmgLBrtCkKlVGi0cr1o74pvJGKnwSzAbRa4RSsiOYKAtApBRZInqMYPBucX9HxWbl15mRZdtw==",
-      "files": [
-        "Akka.1.0.4.nupkg",
-        "Akka.1.0.4.nupkg.sha512",
-        "Akka.nuspec",
-        "lib/net45/Akka.dll",
-        "lib/net45/Akka.ExternalAnnotations.xml",
-        "lib/net45/Akka.xml"
-      ]
+    "Akka/1.0.0": {
+      "type": "project",
+      "path": "../../../core/Akka/project.json"
     },
     "Newtonsoft.Json/7.0.1": {
       "type": "package",
@@ -529,7 +554,7 @@
     },
     "System.Diagnostics.Process/4.0.0-beta-22816": {
       "type": "package",
-      "sha512": "Il3m0cEPiomMZSVfmeU7dJ+ZxQPqJ8OEJd6k2vLWU0F64WKDC/B1HR2Cwti2l1q9cacp96cTmZ7UwxMAbF9b6g==",
+      "sha512": "cJ8+p0xCP6/6cQJ3OF+w6lsx43bL0t+IOywb4IFKf04K9OJdjLx9G1blZMPccYsFX+geIuJVP/iVbj889pKhaQ==",
       "files": [
         "lib/aspnetcore50/System.Diagnostics.Process.dll",
         "lib/contract/System.Diagnostics.Process.dll",
@@ -543,7 +568,7 @@
     },
     "System.IO/4.0.10-beta-22816": {
       "type": "package",
-      "sha512": "/wVhoi2uVXw5IZFU+JrPlyVgKrtMPtzQaYQ3DKUxH9nqiX64BChTFGNDcwZK3iNWTIWESxJhj9JR3lbqbG/PIg==",
+      "sha512": "PjyH9UMFVQHSl8g1XR+M6Q/mG2RTpPff42kG9aygXyR/Wyt/O/wOiyxZ2SaYNl8e86yecKRh9SnK2RS9thI4ig==",
       "files": [
         "lib/aspnetcore50/System.IO.dll",
         "lib/contract/System.IO.dll",
@@ -557,7 +582,7 @@
     },
     "System.Runtime/4.0.20-beta-22816": {
       "type": "package",
-      "sha512": "sDSJEmM6Q5O7Nn9XxHTrsEJ4bv4hsBdeTWjuvyzd9/u9ujl9AWa3q1XFLrdPZetILPOC1P0+1LOCq4kZcsKF5Q==",
+      "sha512": "BEN6F4aNjbBdDxM8Xhb/MCSDhYmtvA29c1HUBvn0aNAVXaIJECLy2w5YkcscdklIieZCrcYeG2UzIgWlr4+GeQ==",
       "files": [
         "lib/aspnetcore50/System.Runtime.dll",
         "lib/contract/System.Runtime.dll",
@@ -619,7 +644,7 @@
     },
     "System.Runtime.Handles/4.0.0-beta-22816": {
       "type": "package",
-      "sha512": "t0hDCtbwOKLBTcyiXHYRfaVb8pXCFYjGDWjmgyaaqmiXYtfzDlUHQ7NGaKHLOzcp29UunHZyS1CVplJ5ZiQ8Qg==",
+      "sha512": "v0zgBcuEWIbjC/AXgmutaLymiHgL6dv/1T7uJVAaraFivnClvEERwihXmRCr+HH22AC1J6tbuGE0/cnhZNV6QA==",
       "files": [
         "lib/aspnetcore50/System.Runtime.Handles.dll",
         "lib/contract/System.Runtime.Handles.dll",
@@ -633,7 +658,7 @@
     },
     "System.Security.SecureString/4.0.0-beta-22816": {
       "type": "package",
-      "sha512": "/2ebjd4tFN8AWgibm3/37jVofPBm402nZW2v1cOET70oN7YufIc/dPFxr7iR52vVZvjWulE1tagtp9JVZ4QkMQ==",
+      "sha512": "MdJtWNPTX4KlhwNM9JeJnWPXiIrOU8iq26oY2eleWxSDhlVq6Vz3Ww8P0pqnIxdN+3lVPwON+eCG+nt7XtkrBA==",
       "files": [
         "lib/aspnetcore50/System.Security.SecureString.dll",
         "lib/contract/System.Security.SecureString.dll",
@@ -647,7 +672,7 @@
     },
     "System.Text.Encoding/4.0.10-beta-22816": {
       "type": "package",
-      "sha512": "QDKTAvat7aDGMWnVkGm6tJvvmc2zSTa/p8M4/OEBBkZKNx4SGkeGEjFUhl7b6AXZ220m4dACygkiAVoB/LqMHw==",
+      "sha512": "4Isk8Lg2mkSex8N1ufJfazDo9Z0zTvx7FRh7LYiIqUJJSmPMenMXoFYMtm3tQ+sUWz23qMlIrOvT9BuIBnmRQg==",
       "files": [
         "lib/aspnetcore50/System.Text.Encoding.dll",
         "lib/contract/System.Text.Encoding.dll",
@@ -661,7 +686,7 @@
     },
     "System.Threading.Tasks/4.0.10-beta-22816": {
       "type": "package",
-      "sha512": "e7TcoQuIPQ4bvkkCY2ulU8NFvj8XqYxsGpD3fAq1KajAlpx5j327Q13lKxlGPb7ouHQydKHCy5G1ZGuydb0DAA==",
+      "sha512": "KhcVrI2JzX1oHigWTbf4F/2uhPSkhjquLPYbBVCLe9HGxLDJk2WLgmTbJk7fIus6xWWnWJmhOp0rHERU9M2SQw==",
       "files": [
         "lib/aspnetcore50/System.Threading.Tasks.dll",
         "lib/contract/System.Threading.Tasks.dll",
@@ -672,11 +697,24 @@
         "System.Threading.Tasks.4.0.10-beta-22816.nupkg.sha512",
         "System.Threading.Tasks.nuspec"
       ]
+    },
+    "Wire/0.0.5": {
+      "type": "package",
+      "sha512": "3DqxwC/b5q8VB+yIxs12lxDjh+AJIZgfgAKNcPinjMG8GKSTCISXc2Q0SQksdRAfzmaPu7Az+v2CSmMNmgzBqw==",
+      "files": [
+        "lib/Wire.dll",
+        "tools/init.ps1",
+        "tools/install.ps1",
+        "tools/uninstall.ps1",
+        "Wire.0.0.5.nupkg",
+        "Wire.0.0.5.nupkg.sha512",
+        "Wire.nuspec"
+      ]
     }
   },
   "projectFileDependencyGroups": {
     "": [
-      "Akka >= 1.0.4",
+      "Akka ",
       "Serilog >= 1.5.14",
       "System.Runtime.Extensions >= 4.0.0",
       "System.Diagnostics.Process >= 4.0.0-beta-22816"
